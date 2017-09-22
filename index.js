@@ -10,9 +10,30 @@ draw.rect(110,100).fill('palevioletred').move(-10, 30)
 //   .loop(true, true)
 
 var polyline = draw.polyline('0,0 100,50 50,100 120,120 120,120')
-  .fill('none').animate().stroke({ width: 3 }).move(10, 140).animate().rotate(45).skew(25, 0)
+  .fill('none')
+  .rotate(-24)
+  .skew(0, 5)
+  .animate()
+  .stroke({ width: 2 })
+  .rotate(0)
+  .move(10, 140)
+  .animate()
+  .rotate(45)
+  .skew(25, 0)
 
 
-draw.text('woah').move(-200, 0).font({family: 'Futura', size: 84}).animate().move(0,0)
+draw.text('woah')
+  .move(-200, 0)
+  .font({family: 'Futura', size: 84})
+  .animate(1400, '<>')
+  .move(0,0)
+
+draw.text('hello')
+  .move(-240, 33)
+  .skew(25, 30)
+  .font({family: 'Futura', size: 54})
+  .animate(1500, '<>')
+  .move(-30,-30)
+  .skew(0, 0)
 
 
